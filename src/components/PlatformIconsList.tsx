@@ -19,6 +19,8 @@ interface Props {
 }
 
 const PlatformIconsList = ({ platforms }: Props) => {
+  if (!platforms.length) return null;
+
   const iconMap: { [key: string]: IconType } = {
     pc: FaWindows,
     playstation: FaPlaystation,
