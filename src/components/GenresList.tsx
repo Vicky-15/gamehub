@@ -28,7 +28,7 @@ const GenresList = ({ selectedGenre, onSelectedGenre }: Props) => {
         Genres
       </Heading>
       <List>
-        {data.map((genre) => (
+        {data.results.map((genre) => (
           <ListItem key={genre.id} paddingY="10px">
             <HStack>
               <Image
